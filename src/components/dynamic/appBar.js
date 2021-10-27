@@ -21,7 +21,7 @@ export default function Appbar() {
         <Toolbar>
           <Link  to="/" style={{ textDecoration: 'none', color: 'unset' ,textAlign: 'center',margin:"auto" }} >
         <Typography variant="h3" component="div" sx={{ flexGrow: 1 }} style={{"font-family": 'Lobster Two'}}>
-            Lymira
+            Limyra
           </Typography>
           </Link>
           
