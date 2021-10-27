@@ -1,0 +1,55 @@
+.background{
+    width : 100%;
+    height : 100%;
+    background-color :#3EBCBD;
+    margin:0px;
+}
+body{
+    height : 100%;
+    background-color :#3EBCBD;
+    margin:0px;
+}
+.action{
+    text-align : center;
+}
+.superduperAds{
+    margin : 10px 0 ;
+    font-family: 'Noto Sans', sans-serif;
+}
+.preview{
+    
+    text-align : center;
+    margin-top: 30px;
+}
+.image{
+    
+    height:300px;
+    width:300px;
+}
+.centered {
+    text-align:center;
+}
+.wrapper {
+    
+    margin-top: 30px;
+    display:inline-block;
+     text-align:left;
+}
+.caption{
+    margin: auto;
+    margin-top: 10px;
+}
+.IGbutton{
+    font-size: 32px;
+    margin: 0 10px;
+}
+.lyrics{
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.tag{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+  
+}
