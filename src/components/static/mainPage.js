@@ -65,7 +65,7 @@ export default function Main(){
                  Please wait.
               </Typography>
               <Typography variant="h4" class ="loading" style={{marginTop:"20px"}} >
-              (Our AI is giving a break to his operation of taking over the world and finding the perfect caption for your picture.)
+              (Our AI is giving a break to its operation of taking over the world and finding the perfect caption for your picture.)
               </Typography>
            </div>
           
