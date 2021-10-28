@@ -11,17 +11,34 @@ export default function Result(props){
     
     const [imageData,setImageData] = useState("")
     const [data,setData] = useState(null)
-
+    const [imageHW,setImageHW] = useState(false)
+    let ratio = 1;
+    let imageW;
+    let imageH;
     const location = useLocation();
 
     useEffect(() => {
-        console.log(location.state.response)
+
         setData(location.state.response)
-        
+        var image = new Image();
+        image.src = location.state.imageData;
+        imageW = image.naturalWidth;
+        imageH = image.naturalHeight
+        setImageHW(true)
+        ratio = 300/Math.max(image.naturalHeight,image.naturalWidth)
         setImageData( location.state.imageData)
     }, [location]);
     if(data!==null){
-        console.log(data.song)
+    }
+    let imageStyle;
+    if(imageHW){
+        let width = imageW/ratio
+        let height = imageH/ratio
+
+    imageStyle = {
+        "width":width.toString()+"px",
+        "height":height.toString()+"px"
+    }
     }
     
     return (
@@ -29,7 +46,7 @@ export default function Result(props){
         <Appbar/>
         <div class="centered">
             <div class="wrapper">
-                <div class="image"><img src={imageData} class={"image"}/></div>
+                <div class="image" style={imageHW ? imageStyle: {}}><img src={imageData} class={"image"} style={imageHW ? imageStyle: {}}/></div>
                 <div class="caption">
                     <i class="fas fa-heart IGbutton" style={{"color":"#FF0000"}}></i>
                     <i class="fas fa-comment IGbutton" style={{"color":"#FFF6CD"}}></i>

@@ -51,5 +51,8 @@ body{
 .tag{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-  
+}
+.loading{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
